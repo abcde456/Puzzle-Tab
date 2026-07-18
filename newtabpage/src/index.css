@@ -50,6 +50,10 @@ body {
     border-color: blue;
 }
 
+.searchbar:hover {
+    cursor: text;
+}
+
 .searchbar input:focus {
     outline: none;
 }
