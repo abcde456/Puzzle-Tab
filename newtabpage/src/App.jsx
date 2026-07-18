@@ -66,6 +66,7 @@ function App() {
                         if (e.key === "Enter") {
                             if (focusedSuggestion >= 0) {
                                 setSearch(suggestions[focusedSuggestion]);
+                                setFocusedSuggestion(-1);
                                 setSuggestions([]);
                             } else if (search.trim() !== "") {
                                 window.location.href = `https://duckduckgo.com/?q=${encodeURIComponent(search)}`;
